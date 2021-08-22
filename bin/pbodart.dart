@@ -1,5 +1,8 @@
-import 'package:pbodart/pbodart.dart' as pbodart;
+import 'dart:io';
 
 void main(List<String> arguments) {
-  print('Hello world: ${pbodart.calculate()}!');
+  String   input = stdin.readLineSync();
+  int number = int.tryParse(input);
+
+  print(number + 100);
 }
